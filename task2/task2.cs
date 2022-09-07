@@ -14,7 +14,11 @@ for (int i = 0; i < 4; i++)
     points[i] = Convert.ToDouble(Console.ReadLine());
 }
 
-if (points[0] == points[2])
+if (points[0] == points[2] && points[1] == points[3])
+{
+    Console.WriteLine("Прямые совпадают");
+}
+else if (points[0] == points[2])
 {
     Console.WriteLine("Прямые параллельны");
 }
